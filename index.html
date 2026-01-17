@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DF Digital Studio</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+body {
+    background-color: #0f1115;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #0c0e13;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+nav a {
+    margin: 0 12px;
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+.header-btn {
+    background-color: #00d084;
+    color: #000;
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* ---------- SEZIONI ---------- */
+section {
+    padding: 90px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #cccccc;
+}
+
+.btn-primary {
+    background-color: #00d084;
+    color: #000;
+    padding: 14px 28px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+.btn-secondary {
+    border: 2px solid #00d084;
+    color: #00d084;
+    padding: 12px 26px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+    max-width: 1200px;
+    margin: auto;
+    padding: 120px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    align-items: center;
+}
+
+/* ---------- GRID ---------- */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #161922;
+    padding: 35px;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+/* ---------- PER CHI È ---------- */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+ul {
+    margin: 20px 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    color: #bbbbbb;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background-color: #0c0e13;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+footer a {
+    color: #777;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 2.2rem; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">DF Digital Studio</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Beni Digitali</a>
+        <a href="#">Servizi</a>
+        <a href="#">Chi sono</a>
+        <a href="#">Contatti</a>
+    </nav>
+    <a href="#" class="header-btn">Scopri i servizi</a>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+    <div>
+        <h1>Soluzioni digitali pratiche per privati e aziende</h1>
+        <p>
+            Strumenti, servizi e beni digitali pronti all’uso per risparmiare tempo
+            e creare valore reale.
+        </p>
+        <a href="#" class="btn-primary">Vai allo Shop Digitale</a>
+        <a href="#" class="btn-secondary">Richiedi un servizio</a>
+    </div>
+    <div></div>
+</div>
+
+<!-- COSA FACCIO -->
+<section>
+    <div class="center">
+        <h2>Cosa posso fare per te</h2>
+    </div>
+
+    <div class="grid-3">
+        <div class="card">
+            <h3>Beni digitali</h3>
+            <p>Ebook, template, strumenti e risorse digitali pronti all’uso, scaricabili subito.</p>
+        </div>
+
+        <div class="card">
+            <h3>Servizi per privati</h3>
+            <p>Supporto personalizzato, consulenze e soluzioni digitali su misura.</p>
+        </div>
+
+        <div class="card">
+            <h3>Servizi per aziende</h3>
+            <p>Soluzioni professionali, automazioni e strumenti per migliorare efficienza e risultati.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PER CHI È -->
+<section>
+    <div class="center">
+        <h2>A chi mi rivolgo</h2>
+    </div>
+
+    <div class="grid-2">
+        <div class="card">
+            <h3>Per privati</h3>
+            <ul>
+                <li>Vuoi soluzioni semplici e chiare</li>
+                <li>Hai bisogno di strumenti pratici</li>
+                <li>Vuoi risparmiare tempo</li>
+            </ul>
+            <a href="#" class="btn-secondary">Scopri i servizi per privati</a>
+        </div>
+
+        <div class="card">
+            <h3>Per aziende</h3>
+            <ul>
+                <li>Cerchi efficienza e metodo</li>
+                <li>Vuoi soluzioni digitali scalabili</li>
+                <li>Hai bisogno di un partner affidabile</li>
+            </ul>
+            <a href="#" class="btn-secondary">Scopri i servizi per aziende</a>
+        </div>
+    </div>
+</section>
+
+<!-- PERCHÉ SCEGLIERMI -->
+<section class="center">
+    <h2>Perché scegliere me</h2>
+    <p>Soluzioni concrete • Approccio pratico • Prodotti e servizi integrati • Focus sui risultati</p>
+</section>
+
+<!-- SHOP -->
+<section>
+    <div class="center">
+        <h2>Beni digitali in evidenza</h2>
+    </div>
+
+    <div class="grid-3">
+        <div class="card"><h3>Template Web</h3><a href="#" class="btn-secondary">Vai al prodotto</a></div>
+        <div class="card"><h3>Ebook pratici</h3><a href="#" class="btn-secondary">Vai al prodotto</a></div>
+        <div class="card"><h3>Kit professionali</h3><a href="#" class="btn-secondary">Vai al prodotto</a></div>
+    </div>
+</section>
+
+<!-- CHI SONO -->
+<section class="center">
+    <h2>Chi sono</h2>
+    <p>
+        Aiuto privati e aziende a trasformare problemi concreti
+        in strumenti digitali utili, semplici e immediatamente utilizzabili.
+    </p>
+    <a href="#" class="btn-secondary">Scopri di più</a>
+</section>
+
+<!-- CTA FINALE -->
+<section class="center">
+    <h2>Hai bisogno di una soluzione digitale concreta?</h2>
+    <p>Scrivimi e troviamo insieme la soluzione più adatta a te.</p>
+    <a href="#" class="btn-primary">Contattami ora</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 DF Digital Studio |
+    <a href="#">Privacy</a>
+    <a href="#">Termini</a>
+    <a href="#">Contatti</a>
+    <br>Powered by Wix
+</footer>
+
+</body>
+</html>
